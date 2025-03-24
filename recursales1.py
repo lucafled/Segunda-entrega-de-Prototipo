@@ -42,8 +42,8 @@ def tabla():
     print("\n Leaderborad:")
     jugadores_ordenados = sorted(jugadores, key=lambda x: x["puntos"], reverse=True)
     
-    for idx, jugador in enumerate(jugadores_ordenados, start=1):
-        print(f"{idx}. {jugador['nombre']} - {jugador['puntos']} puntos")
+    for srs, jugador in enumerate(jugadores_ordenados, start=1):
+        print(f"{srs}. {jugador['nombre']} - {jugador['puntos']} puntos")
 
 
 def main():
